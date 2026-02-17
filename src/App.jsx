@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter basename="/workout-buddy-client">
+      <BrowserRouter>
         <Navbar />
         <div className="pages">
           <Routes>
