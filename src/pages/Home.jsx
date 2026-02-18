@@ -49,7 +49,11 @@ const Home = () => {
           workouts.map((workout) => (
             <WorkoutDetails workout={workout} key={workout._id} />
           ))}
-        {workouts === null && <div>Add some workouts to get started!</div>}
+        {workouts === null || workouts.length === 0 ? (
+          <div>Add some workouts to get started!</div>
+        ) : (
+          ""
+        )}
       </div>
       {width > 768 && <WorkoutForm className="home-workout" />}
     </div>
