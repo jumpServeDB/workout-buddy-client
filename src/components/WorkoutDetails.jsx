@@ -10,7 +10,7 @@ const WorkoutDetails = ({ workout }) => {
       return;
     }
     const response = await fetch(
-      "http://localhost:4000/api/workouts/" + workout._id,
+      `${import.meta.env.VITE_API_URL}/api/workouts/` + workout._id,
       {
         method: "DELETE",
         headers: {
