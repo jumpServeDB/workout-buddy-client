@@ -204,4 +204,5 @@ form button {
 
 .loading-spinner {
   animation: spin 1s linear infinite;
+  height: 1rem;
 }
