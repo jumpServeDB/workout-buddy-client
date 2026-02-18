@@ -36,7 +36,7 @@ const Navbar = () => {
         </Link>
         <nav>
           {user && width < 768 && !burgerIsOpen && (
-            <img onClick={toggleBurger} src="../../public/Hamburger_icon.svg" />
+            <img onClick={toggleBurger} src="/Hamburger_icon.svg" />
           )}
           {user && width > 768 && (
             <div className="nav-full-size">
