@@ -7,7 +7,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/api": {
-        target: "https://workout-buddy-server-production.up.railway.app:4000",
+        target: "https://workout-buddy-server-production.up.railway.app",
         changeOrigin: true,
         // rewrite: (path) => path.replace(/^\/api/, ""),
       },
