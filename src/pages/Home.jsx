@@ -49,7 +49,11 @@ const Home = () => {
           workouts.map((workout) => (
             <WorkoutDetails workout={workout} key={workout._id} />
           ))}
-        {workouts === null || workouts.length === 0 ? (
+        {workouts === null && (
+          <img src="/loading-spinner.png" className="loading-spinner" />
+        )}
+
+        {workouts.length === 0 ? (
           <div>Add some workouts to get started!</div>
         ) : (
           ""
