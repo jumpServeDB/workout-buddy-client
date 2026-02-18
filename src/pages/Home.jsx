@@ -53,7 +53,7 @@ const Home = () => {
           <img src="/loading-spinner.png" className="loading-spinner" />
         )}
 
-        {workouts.length === 0 ? (
+        {workouts && workouts.length === 0 ? (
           <div>Add some workouts to get started!</div>
         ) : (
           ""
