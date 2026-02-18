@@ -45,13 +45,11 @@ const Home = () => {
   return (
     <div className="home">
       <div className="workouts">
-        {workouts ? (
+        {workouts &&
           workouts.map((workout) => (
             <WorkoutDetails workout={workout} key={workout._id} />
-          ))
-        ) : (
-          <div>Add some workouts to get started!</div>
-        )}
+          ))}
+        {workouts === null && <div>Add some workouts to get started!</div>}
       </div>
       {width > 768 && <WorkoutForm className="home-workout" />}
     </div>
