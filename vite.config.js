@@ -9,7 +9,6 @@ export default defineConfig({
       "/api": {
         target: "https://workout-buddy-server-production.up.railway.app",
         changeOrigin: true,
-        // rewrite: (path) => path.replace(/^\/api/, ""),
       },
     },
   },
